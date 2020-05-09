@@ -1,0 +1,17 @@
+{
+    "books": [
+        {
+            "id": "book-id",
+            "title": "Book title",
+            "author": "Author name",
+            "year": "2020",
+            "donation": "optional: link to paypal",
+            "chapters": [
+                "chapter 1 name",
+                "chapter 2 name",
+                "chapter 3 name",
+                "etc"
+            ]
+        }
+    ]
+}
