@@ -1,14 +1,13 @@
 import React from 'react'
+import Chapter from './Chapter'
 
 export default function Book({ book }) {
-    const { chapters } = book
+    const { id, chapters } = book
     return (
-        <>
-            <ul>
-                {chapters.map((title) => (
-                    <li>{title}</li>
-                ))}
-            </ul>
-        </>
+        <main>
+            {chapters.map((title, idx) => (
+                <Chapter key={idx} bookId={id} idx={idx} title={title} />
+            ))}
+        </main>
     )
 }

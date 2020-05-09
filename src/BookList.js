@@ -18,6 +18,7 @@ export default function BookList({ bookList, onBookClick }) {
                                 href={donation}
                                 title="Faire un don via paypal"
                                 className="BookList-Donation"
+                                onClick={(e) => e.stopPropagation()}
                             >
                                 <img
                                     src={paypal}

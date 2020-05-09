@@ -1,0 +1,10 @@
+.Chapter {
+    margin: 0.5em 0.1em;
+}
+.Chapter-Title {
+    display: inline;
+    font-size: 16px;
+}
+.Chapter-Content {
+    font-size: 14px;
+}
