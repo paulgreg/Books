@@ -1,0 +1,33 @@
+.BookList-BookList {
+    margin: 1em 1em 1em 0;
+    list-style-type: square;
+}
+
+.BookList-Book {
+    margin: 1em 0;
+}
+
+.BookList-Title {
+    margin-right: 0.25em;
+    border-bottom: 1px solid black;
+}
+
+.BookList-Author {
+    margin: 0 0.25em;
+}
+
+.BookList-Year {
+    display: block;
+    margin: 0 0.25em;
+}
+
+.BookList-Donation {
+    position: absolute;
+    right: 1em;
+    margin-top: -4px;
+}
+
+.BookList-Paypal {
+    padding-left: 1em;
+    vertical-align: middle;
+}

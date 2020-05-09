@@ -1,0 +1,6 @@
+.Header {
+    display: flex;
+}
+.Header-Logo {
+    padding: 0.5em;
+}

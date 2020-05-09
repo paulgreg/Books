@@ -1,0 +1,13 @@
+.Header-Minified {
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.Header-Book-Title {
+    font-size: 1.1em;
+    margin: 0.1em 0.25em 0.25em 0.25em;
+}
+
+.Header-Back {
+    padding: 0.1em;
+}
