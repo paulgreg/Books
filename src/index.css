@@ -6,17 +6,18 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    padding: 0.5em;
-    background: #eee;
+    background: #ccc;
     color: black;
 }
 
 a {
     color: #222;
 }
+
 a:visited {
     color: #444;
 }
+
 a:hover {
     color: #000;
 }

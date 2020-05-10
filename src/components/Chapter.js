@@ -14,7 +14,7 @@ export default function Chapter({ bookId, idx, title }) {
     return (
         <article className="Chapter">
             <details>
-                <summary onClick={fetchContent}>
+                <summary onClick={fetchContent} className="Chapter-Summary">
                     <h2 className="Chapter-Title">
                         Chapitre {idx + 1} : {title}
                     </h2>

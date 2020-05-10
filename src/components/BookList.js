@@ -13,28 +13,39 @@ export default function BookList({ bookList, onBookClick }) {
                     onBookClick && onBookClick(book)
                 }
                 return (
-                    <li key={id} className="BookList-Book">
-                        {donation && (
+                    <li key={id}>
+                        <div className="BookList-Book">
                             <a
-                                href={donation}
-                                title="Faire un don via paypal"
-                                className="BookList-Donation"
+                                href="/"
+                                className="BookList-Link"
+                                onClick={onClick}
                             >
-                                <img
-                                    src={paypal}
-                                    className="BookList-Paypal"
-                                    width="32"
-                                    height="32"
-                                    alt="paypal"
-                                />
+                                <strong className="BookList-Title">
+                                    {title}
+                                </strong>
+                                par
+                                <em className="BookList-Author">{author}</em>
+                                {' - '}
+                                <small className="BookList-Year">{year}</small>
                             </a>
-                        )}
-                        <a href="/" className="BookList-Link" onClick={onClick}>
-                            <strong className="BookList-Title">{title}</strong>
-                            par
-                            <em className="BookList-Author">{author}</em>
-                            <small className="BookList-Year">{year}</small>
-                        </a>
+                            {donation && (
+                                <a
+                                    href={donation}
+                                    title="Faire un don via paypal"
+                                    className="BookList-Donation"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src={paypal}
+                                        className="BookList-Paypal"
+                                        width="32"
+                                        height="32"
+                                        alt="paypal"
+                                    />
+                                </a>
+                            )}
+                        </div>
                     </li>
                 )
             })}
