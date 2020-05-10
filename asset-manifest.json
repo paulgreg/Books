@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Books/static/css/main.c263724b.chunk.css",
+    "main.js": "/Books/static/js/main.528e81fb.chunk.js",
+    "main.js.map": "/Books/static/js/main.528e81fb.chunk.js.map",
+    "runtime-main.js": "/Books/static/js/runtime-main.defc50f5.js",
+    "runtime-main.js.map": "/Books/static/js/runtime-main.defc50f5.js.map",
+    "static/js/2.d7f898d9.chunk.js": "/Books/static/js/2.d7f898d9.chunk.js",
+    "static/js/2.d7f898d9.chunk.js.map": "/Books/static/js/2.d7f898d9.chunk.js.map",
+    "index.html": "/Books/index.html",
+    "precache-manifest.e5e363f2ba3877444460d74f228499fc.js": "/Books/precache-manifest.e5e363f2ba3877444460d74f228499fc.js",
+    "service-worker.js": "/Books/service-worker.js",
+    "static/css/main.c263724b.chunk.css.map": "/Books/static/css/main.c263724b.chunk.css.map",
+    "static/js/2.d7f898d9.chunk.js.LICENSE.txt": "/Books/static/js/2.d7f898d9.chunk.js.LICENSE.txt",
+    "static/media/arrow_left.svg": "/Books/static/media/arrow_left.bd85b495.svg",
+    "static/media/document_download.svg": "/Books/static/media/document_download.6e23317c.svg",
+    "static/media/logo.svg": "/Books/static/media/logo.afd007b9.svg",
+    "static/media/paypal.svg": "/Books/static/media/paypal.2b72ebe6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.defc50f5.js",
+    "static/js/2.d7f898d9.chunk.js",
+    "static/css/main.c263724b.chunk.css",
+    "static/js/main.528e81fb.chunk.js"
+  ]
+}
