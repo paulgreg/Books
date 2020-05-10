@@ -34,6 +34,12 @@ To add a book chapter, create a directory in `public/data/books/{book-id}` where
 
 Then, create in that directory [markdown](https://www.markdownguide.org/) files named `chapter-1.md`, `chapter-2.md`, and so on for each chapter defined in `chapters` in the config.json
 
+## Hosting on github-pages
+
+You can host that project on github pages by launching `./to_ghpages` script. It will build project, commit what’s in build directory at root then push it in branch `gh-pages` to github.
+
+If you change the projet name on github, change also `homepage` attribute in the `package.json`.
+
 ## Attributions
 
 Icons are from [Piotr Adam Kwiatkowski](http://ikons.piotrkwiatkowski.co.uk/). Thanks
