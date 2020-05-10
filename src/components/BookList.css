@@ -1,11 +1,17 @@
 .BookList-BookList {
-    margin: 1em 1em 1em 0;
+    padding-left: 1.5em;
     list-style-type: square;
 }
 
 .BookList-Book {
     margin: 1em 0;
     display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+    .BookList-Book {
+        flex-direction: column;
+    }
 }
 
 .BookList-Title {
@@ -17,19 +23,17 @@
 .BookList-Link {
     text-decoration: none;
     flex: 2 1;
+    margin-bottom: 0.5em;
 }
 
 .BookList-Author {
     font-size: 1.1em;
 }
 
-.BookList-Year {
+.BookList-Action {
+    padding: 0.25em;
 }
-
-.BookList-Donation {
-}
-
-.BookList-Paypal {
-    padding-left: 1em;
+.BookList-Icon {
+    padding-right: 0.25em;
     vertical-align: middle;
 }
