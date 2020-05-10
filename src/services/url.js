@@ -6,3 +6,9 @@ export const getParamFromUrl = (key) => {
         return p && p.length === 2 ? p[1] : undefined
     }
 }
+
+export const pushBookUrl = ({ id, title }) =>
+    window.history.pushState({}, title, `?book=${id}`)
+
+export const pushBookAndChapterUrl = ({ id, title, idx }) =>
+    window.history.pushState({}, title, `?book=${id}&chapter=${idx}`)

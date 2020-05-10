@@ -6,7 +6,7 @@ import Book from './components/Book'
 import Header from './components/Header'
 import HeaderMinified from './components/HeaderMinified'
 import Footer from './components/Footer'
-import { getParamFromUrl } from './services/url'
+import { getParamFromUrl, pushBookUrl } from './services/url'
 
 function App() {
     const [currentBook, setCurrentBook] = useState()
@@ -23,8 +23,7 @@ function App() {
 
     const onBookClick = (book) => {
         setCurrentBook(book)
-        const { id, title } = book
-        window.history.pushState({}, title, `?book=${id}`)
+        pushBookUrl(book)
     }
 
     const onBackClick = () => {
