@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
 import BookList from './components/BookList'
-import { getBookList } from './services/bookService'
+import { getBookList, getBookFromId } from './services/bookService'
 import Book from './components/Book'
 import Header from './components/Header'
 import HeaderMinified from './components/HeaderMinified'
 import Footer from './components/Footer'
+import { getParamFromUrl } from './services/url'
 
 function App() {
     const [currentBook, setCurrentBook] = useState()
@@ -13,7 +14,11 @@ function App() {
     const [bookList, setBookList] = useState([])
 
     useEffect(() => {
-        getBookList().then((books) => setBookList(books))
+        getBookList().then((books) => {
+            setBookList(books)
+            const book = getBookFromId(books, getParamFromUrl('book'))
+            if (book) setCurrentBook(book)
+        })
     }, [])
 
     const onBookClick = (book) => {
