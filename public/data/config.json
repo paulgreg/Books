@@ -1,0 +1,13 @@
+{
+    "books": [
+        {
+            "id": "example-book",
+            "title": "A Book Title",
+            "author": "An Author",
+            "year": "2020",
+            "donation": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZPW56LR9HLMGS&currency_code=EUR&source=url",
+            "epub": "https://paulgreg.me/",
+            "chapters": ["Chapitre 1"]
+        }
+    ]
+}
