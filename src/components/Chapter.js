@@ -9,6 +9,7 @@ function Chapter({ t, bookId, idx, opened = false, title, onChapterOpened }) {
 
     const fetchContent = () => {
         if (!content) {
+            setContent(t('Chapter.loading'))
             getChapter(bookId, idx).then((data) => setContent(data))
             onChapterOpened && onChapterOpened(idx)
         }

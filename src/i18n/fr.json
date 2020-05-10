@@ -12,6 +12,7 @@
         "BookList.epub.icon.alt": "télécharger",
         "BookList.donate.link.text": "faire un don avec paypal",
         "BookList.donate.icon.alt": "paypal",
-        "Chapter.title": "Chapitre"
+        "Chapter.title": "Chapitre",
+        "Chapter.loading": "Chargement en cours"
     }
 }
