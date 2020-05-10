@@ -7,18 +7,18 @@ export default function BookList({ bookList, onBookClick }) {
         <ul className="BookList-BookList">
             {bookList.map((book) => {
                 const { id, title, author, year, donation } = book
+
+                const onClick = (e) => {
+                    e.preventDefault()
+                    onBookClick && onBookClick(book)
+                }
                 return (
-                    <li
-                        key={id}
-                        className="BookList-Book"
-                        onClick={() => onBookClick && onBookClick(book)}
-                    >
+                    <li key={id} className="BookList-Book">
                         {donation && (
                             <a
                                 href={donation}
                                 title="Faire un don via paypal"
                                 className="BookList-Donation"
-                                onClick={(e) => e.stopPropagation()}
                             >
                                 <img
                                     src={paypal}
@@ -29,10 +29,12 @@ export default function BookList({ bookList, onBookClick }) {
                                 />
                             </a>
                         )}
-                        <strong className="BookList-Title">{title}</strong>
-                        par
-                        <em className="BookList-Author">{author}</em>
-                        <small className="BookList-Year">{year}</small>
+                        <a href="/" className="BookList-Link" onClick={onClick}>
+                            <strong className="BookList-Title">{title}</strong>
+                            par
+                            <em className="BookList-Author">{author}</em>
+                            <small className="BookList-Year">{year}</small>
+                        </a>
                     </li>
                 )
             })}

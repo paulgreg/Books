@@ -12,6 +12,10 @@
     border-bottom: 1px solid black;
 }
 
+.BookList-Link {
+    text-decoration: none;
+}
+
 .BookList-Author {
     margin: 0 0.25em;
 }
