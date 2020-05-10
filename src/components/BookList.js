@@ -2,8 +2,9 @@ import React from 'react'
 import './BookList.css'
 import iconPaypal from './paypal.svg'
 import iconDownload from './document_download.svg'
+import { withTranslation } from 'react-i18next'
 
-export default function BookList({ bookList, onBookClick }) {
+function BookList({ t, bookList, onBookClick }) {
     return (
         <ul className="BookList-BookList">
             {bookList.map((book) => {
@@ -24,7 +25,7 @@ export default function BookList({ bookList, onBookClick }) {
                                 <strong className="BookList-Title">
                                     {title}
                                 </strong>
-                                par
+                                {t('by')}
                                 <em className="BookList-Author">{author}</em>
                                 {' - '}
                                 <small className="BookList-Year">{year}</small>
@@ -32,7 +33,7 @@ export default function BookList({ bookList, onBookClick }) {
                             {epub && (
                                 <a
                                     href={epub}
-                                    title="télécharger le fichier epub"
+                                    title={t('BookList.epub.link.text')}
                                     className="BookList-Action"
                                 >
                                     <img
@@ -40,15 +41,15 @@ export default function BookList({ bookList, onBookClick }) {
                                         className="BookList-Icon"
                                         width="24"
                                         height="24"
-                                        alt="download"
+                                        alt={t('BookList.epub.icon.alt')}
                                     />
-                                    télécharger en epub
+                                    {t('BookList.epub.link.text')}
                                 </a>
                             )}
                             {donation && (
                                 <a
                                     href={donation}
-                                    title="Faire un don via paypal"
+                                    title={t('BookList.donate.link.text')}
                                     className="BookList-Action"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -58,9 +59,9 @@ export default function BookList({ bookList, onBookClick }) {
                                         className="BookList-Icon"
                                         width="24"
                                         height="24"
-                                        alt="paypal"
+                                        alt={t('BookList.donate.icon.alt')}
                                     />
-                                    faire un don
+                                    {t('BookList.donate.link.text')}
                                 </a>
                             )}
                         </div>
@@ -70,3 +71,5 @@ export default function BookList({ bookList, onBookClick }) {
         </ul>
     )
 }
+
+export default withTranslation()(BookList)

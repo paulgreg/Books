@@ -7,6 +7,7 @@ import Header from './components/Header'
 import HeaderMinified from './components/HeaderMinified'
 import Footer from './components/Footer'
 import { getParamFromUrl, pushBookUrl } from './services/url'
+import LangageSwitcher from './components/LangageSwitcher'
 
 function App() {
     const [currentBook, setCurrentBook] = useState()
@@ -35,6 +36,7 @@ function App() {
         <div className="App">
             {!currentBook && (
                 <>
+                    <LangageSwitcher className="App-LanguageSwitcher" />
                     <Header />
                     <BookList bookList={bookList} onBookClick={onBookClick} />
                     <Footer />

@@ -1,6 +1,15 @@
 .Header {
     display: flex;
 }
+
 .Header-Logo {
     padding: 0.5em;
+}
+
+.App-LanguageSwitcher {
+    float: right;
+    right: 1em;
+}
+.App-LanguageSwitcher:after {
+    clear: right;
 }

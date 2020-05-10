@@ -1,28 +1,33 @@
 import React from 'react'
 import './Footer.css'
+import { withTranslation } from 'react-i18next'
 
-export default function Footer() {
+function Footer({ t }) {
     return (
         <footer className="Footer">
             <details>
                 <summary>
-                    <h4 className="Footer-Subtitle">Attributions</h4>
+                    <h4 className="Footer-Title">{t('Footer.title')}</h4>
                 </summary>
                 <ul className="Footer-List">
                     <li>
-                        Icônes par{' '}
+                        {t('Footer.icons')}
+                        {t('by')}
                         <a href="http://ikons.piotrkwiatkowski.co.uk/">
                             Piotr Adam Kwiatkowski
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/paulgreg/Books">
-                            Code on github
-                        </a>{' '}
-                        by <a href="https://paulgreg.me/">paulgreg</a>
+                            {t('Footer.codeOnGithub')}
+                        </a>
+                        {t('by')}
+                        <a href="https://paulgreg.me/">paulgreg</a>
                     </li>
                 </ul>
             </details>
         </footer>
     )
 }
+
+export default withTranslation()(Footer)

@@ -1,0 +1,17 @@
+{
+    "translation": {
+        "Header.title": "Livres",
+        "Header.logo.at": "livre",
+        "HeaderMinified.link.text": "Retour à la liste des livres",
+        "HeaderMinified.icon.lat": "retour",
+        "Footer.title": "Remerciements",
+        "Footer.icons": "Icônes",
+        "Footer.codeOnGithub": "Code source sur github",
+        "by": " par ",
+        "BookList.epub.link.text": "télécharger en epub",
+        "BookList.epub.icon.alt": "télécharger",
+        "BookList.donate.link.text": "faire un don avec paypal",
+        "BookList.donate.icon.alt": "paypal",
+        "Chapter.title": "Chapitre"
+    }
+}

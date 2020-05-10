@@ -1,0 +1,17 @@
+{
+    "translation": {
+        "Header.title": "Books",
+        "Header.logo.at": "book",
+        "HeaderMinified.link.text": "Back to book list",
+        "HeaderMinified.icon.lat": "Back",
+        "Footer.title": "Attributions",
+        "Footer.icons": "icons",
+        "Footer.codeOnGithub": "Source code on github",
+        "by": " by ",
+        "BookList.epub.link.text": "download epub",
+        "BookList.epub.icon.alt": "download",
+        "BookList.donate.link.text": "donate via paypal",
+        "BookList.donate.icon.alt": "paypal",
+        "Chapter.title": "Chapter"
+    }
+}
