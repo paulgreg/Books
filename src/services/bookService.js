@@ -9,3 +9,9 @@ export function getBookList() {
             return cachedConfig.books
         })
 }
+
+export function getChapter(bookId, chapterIdx) {
+    return fetch(`./data/books/${bookId}/chapter-${chapterIdx + 1}.md`)
+        .then((response) => response.text())
+        .catch((e) => e)
+}
