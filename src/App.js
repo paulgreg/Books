@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import BookList from './BookList'
-import { getBookList } from './bookService'
-import Book from './Book'
-import Header from './Header'
-import HeaderMinified from './HeaderMinified'
-import Footer from './Footer'
+import BookList from './components/BookList'
+import { getBookList } from './services/bookService'
+import Book from './components/Book'
+import Header from './components/Header'
+import HeaderMinified from './components/HeaderMinified'
+import Footer from './components/Footer'
 
 function App() {
     const [currentBook, setCurrentBook] = useState()
